@@ -47,6 +47,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>9814085E-66CD-45DA-AF69-7C64369346AD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>364D5B17-7D02-459C-B600-80915440E331</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>cdpath</string>
@@ -99,22 +112,22 @@ from parser import HTMLTableParser
 
 
 def generate_markdown_table(table):
-    table = iter(table[0])
-    header = next(table)
-    header = '|'.join(header)
-    separator = '|'.join(['---']*len(header))
-    sys.stdout.write(header+'\n')
-    sys.stdout.write(separator+'\n')
-    for t in table:
-        t = '|'.join(t)
-        sys.stdout.write(t+'\n')
+    ts = []
+    for idx, t in enumerate(table):
+        ts.append('|'.join(t))
+        if idx == 0:
+            # a.k.a. header
+            separator = '|'.join(['---'] * len(t))
+            ts.append(separator)
+    sys.stdout.write('\n'.join(ts))
 
 query = sys.argv[1]
 
 parser = HTMLTableParser()
 parser.feed(query)
 
-generate_markdown_table(parser.tables)</string>
+for table in parser.tables:
+	generate_markdown_table(table)</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -167,8 +180,14 @@ generate_markdown_table(parser.tables)</string>
 				<false/>
 				<key>modsmode</key>
 				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>pro.writer.mac</string>
+					<string>com.happenapps.Quiver</string>
+					<string>com.coderforart.MWeb</string>
+				</array>
 				<key>relatedAppsMode</key>
-				<integer>0</integer>
+				<integer>1</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
@@ -176,6 +195,23 @@ generate_markdown_table(parser.tables)</string>
 			<string>816667CB-E309-42DA-A6AE-856C215E2717</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>keyword</key>
+				<string>tt</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.snippet</string>
+			<key>uid</key>
+			<string>9814085E-66CD-45DA-AF69-7C64369346AD</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -187,14 +223,14 @@ generate_markdown_table(parser.tables)</string>
 		<key>145D1882-556B-484B-9830-BBE2E7EC3DB4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>370</integer>
+			<integer>390</integer>
 			<key>ypos</key>
 			<integer>110</integer>
 		</dict>
 		<key>364D5B17-7D02-459C-B600-80915440E331</key>
 		<dict>
 			<key>xpos</key>
-			<integer>220</integer>
+			<integer>230</integer>
 			<key>ypos</key>
 			<integer>110</integer>
 		</dict>
@@ -205,17 +241,24 @@ generate_markdown_table(parser.tables)</string>
 			<key>ypos</key>
 			<integer>110</integer>
 		</dict>
+		<key>9814085E-66CD-45DA-AF69-7C64369346AD</key>
+		<dict>
+			<key>xpos</key>
+			<integer>60</integer>
+			<key>ypos</key>
+			<integer>250</integer>
+		</dict>
 		<key>E244FEC6-9942-4EC6-A9D8-BBE08A039FDB</key>
 		<dict>
 			<key>xpos</key>
-			<integer>520</integer>
+			<integer>550</integer>
 			<key>ypos</key>
 			<integer>110</integer>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>0.0.1</string>
+	<string>0.0.2</string>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/cdpath/alfred_workflows</string>
 </dict>
 </plist>
