@@ -8,24 +8,11 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
-		<key>2BF13683-835C-4347-AF5B-9BFC1223ECB6</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>9E69036A-1B66-4A10-9046-99A3EAA4B03A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>2F3318C1-8262-43BD-A456-EB2B2A94C650</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>53E30C48-976E-46C2-BA45-94E01709C0A2</string>
+				<string>6454D7E8-56CF-4DC4-A058-359AB7FED372</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -34,8 +21,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>53E30C48-976E-46C2-BA45-94E01709C0A2</key>
-		<array/>
 		<key>8942009E-7800-4303-B4CD-C81203ACC682</key>
 		<array>
 			<dict>
@@ -76,27 +61,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>B71CB49B-E762-47E3-A2B6-C73AAA3E39AF</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>B23C47B0-8A23-4EA9-B6D1-A00266C8C10E</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>2BF13683-835C-4347-AF5B-9BFC1223ECB6</string>
+				<string>B467D021-411C-452E-8810-B065722585C3</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -107,19 +72,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>2F3318C1-8262-43BD-A456-EB2B2A94C650</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>B23C47B0-8A23-4EA9-B6D1-A00266C8C10E</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>9E69036A-1B66-4A10-9046-99A3EAA4B03A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -141,7 +93,7 @@
 				<false/>
 			</dict>
 		</array>
-		<key>B71CB49B-E762-47E3-A2B6-C73AAA3E39AF</key>
+		<key>B467D021-411C-452E-8810-B065722585C3</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -224,33 +176,14 @@
 				<key>matchcasesensitive</key>
 				<false/>
 				<key>matchmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>matchstring</key>
-				<string>com.soulmen.ulysses-setapp</string>
+				<string>ulysses</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.filter</string>
 			<key>uid</key>
 			<string>8942009E-7800-4303-B4CD-C81203ACC682</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>inputstring</key>
-				<string>{var:editor}</string>
-				<key>matchcasesensitive</key>
-				<true/>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>matchstring</key>
-				<string>com.apple.Notes</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.filter</string>
-			<key>uid</key>
-			<string>B71CB49B-E762-47E3-A2B6-C73AAA3E39AF</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -383,35 +316,16 @@ function u(character) {
 				<key>inputstring</key>
 				<string>{var:editor}</string>
 				<key>matchcasesensitive</key>
-				<true/>
+				<false/>
 				<key>matchmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>matchstring</key>
-				<string>com.evernote.Evernote</string>
+				<string>Notes|Evernote|scapple</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.filter</string>
 			<key>uid</key>
-			<string>B23C47B0-8A23-4EA9-B6D1-A00266C8C10E</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>inputstring</key>
-				<string>{var:editor}</string>
-				<key>matchcasesensitive</key>
-				<true/>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>matchstring</key>
-				<string>com.literatureandlatte.scapple</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.filter</string>
-			<key>uid</key>
-			<string>2BF13683-835C-4347-AF5B-9BFC1223ECB6</string>
+			<string>B467D021-411C-452E-8810-B065722585C3</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -428,7 +342,7 @@ function u(character) {
 			<key>type</key>
 			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>53E30C48-976E-46C2-BA45-94E01709C0A2</string>
+			<string>6454D7E8-56CF-4DC4-A058-359AB7FED372</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -438,11 +352,11 @@ function u(character) {
 				<key>inputstring</key>
 				<string>{var:editor}</string>
 				<key>matchcasesensitive</key>
-				<true/>
+				<false/>
 				<key>matchmode</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>matchstring</key>
-				<string>com.soulmen.ulysses-setapp</string>
+				<string>^((?!(ulysses)).)*$</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.filter</string>
@@ -469,15 +383,6 @@ Q: Supported browser?
 A: Google Chrome and Safari</string>
 	<key>uidata</key>
 	<dict>
-		<key>2BF13683-835C-4347-AF5B-9BFC1223ECB6</key>
-		<dict>
-			<key>note</key>
-			<string>Scapple</string>
-			<key>xpos</key>
-			<integer>570</integer>
-			<key>ypos</key>
-			<integer>340</integer>
-		</dict>
 		<key>2F3318C1-8262-43BD-A456-EB2B2A94C650</key>
 		<dict>
 			<key>colorindex</key>
@@ -485,27 +390,27 @@ A: Google Chrome and Safari</string>
 			<key>note</key>
 			<string>else</string>
 			<key>xpos</key>
-			<integer>570</integer>
+			<integer>530</integer>
 			<key>ypos</key>
-			<integer>470</integer>
+			<integer>430</integer>
 		</dict>
 		<key>494649E5-798B-46A8-B318-39FBCBF033A6</key>
 		<dict>
 			<key>note</key>
 			<string>Ulysses shortcut</string>
 			<key>xpos</key>
-			<integer>840</integer>
+			<integer>800</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>50</integer>
 		</dict>
-		<key>53E30C48-976E-46C2-BA45-94E01709C0A2</key>
+		<key>6454D7E8-56CF-4DC4-A058-359AB7FED372</key>
 		<dict>
 			<key>note</key>
 			<string>original markdown</string>
 			<key>xpos</key>
-			<integer>690</integer>
+			<integer>650</integer>
 			<key>ypos</key>
-			<integer>440</integer>
+			<integer>400</integer>
 		</dict>
 		<key>8942009E-7800-4303-B4CD-C81203ACC682</key>
 		<dict>
@@ -514,16 +419,16 @@ A: Google Chrome and Safari</string>
 			<key>note</key>
 			<string>Ulysses</string>
 			<key>xpos</key>
-			<integer>570</integer>
+			<integer>530</integer>
 			<key>ypos</key>
-			<integer>40</integer>
+			<integer>80</integer>
 		</dict>
 		<key>9E69036A-1B66-4A10-9046-99A3EAA4B03A</key>
 		<dict>
 			<key>note</key>
 			<string>convert to RTF</string>
 			<key>xpos</key>
-			<integer>690</integer>
+			<integer>650</integer>
 			<key>ypos</key>
 			<integer>230</integer>
 		</dict>
@@ -532,46 +437,39 @@ A: Google Chrome and Safari</string>
 			<key>note</key>
 			<string>Get [Title](URL)</string>
 			<key>xpos</key>
-			<integer>270</integer>
+			<integer>280</integer>
 			<key>ypos</key>
 			<integer>230</integer>
-		</dict>
-		<key>B23C47B0-8A23-4EA9-B6D1-A00266C8C10E</key>
-		<dict>
-			<key>note</key>
-			<string>Evernote</string>
-			<key>xpos</key>
-			<integer>570</integer>
-			<key>ypos</key>
-			<integer>260</integer>
 		</dict>
 		<key>B35F3739-AAF8-4F94-93A6-9B98060EDF42</key>
 		<dict>
 			<key>xpos</key>
-			<integer>680</integer>
+			<integer>640</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>50</integer>
 		</dict>
-		<key>B71CB49B-E762-47E3-A2B6-C73AAA3E39AF</key>
+		<key>B467D021-411C-452E-8810-B065722585C3</key>
 		<dict>
 			<key>note</key>
-			<string>Notes</string>
+			<string>Notes
+Evernote
+scapple</string>
 			<key>xpos</key>
-			<integer>570</integer>
+			<integer>530</integer>
 			<key>ypos</key>
-			<integer>180</integer>
+			<integer>260</integer>
 		</dict>
 		<key>ED3AEF7C-DD02-43F9-977C-DD012FA66446</key>
 		<dict>
 			<key>xpos</key>
-			<integer>90</integer>
+			<integer>100</integer>
 			<key>ypos</key>
 			<integer>230</integer>
 		</dict>
 		<key>FC1D61AC-1A5A-45BC-A03D-76A2CA805D0B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>840</integer>
+			<integer>810</integer>
 			<key>ypos</key>
 			<integer>230</integer>
 		</dict>
@@ -582,7 +480,7 @@ A: Google Chrome and Safari</string>
 		<string>Google Chrome</string>
 	</dict>
 	<key>version</key>
-	<string>0.0.2</string>
+	<string>0.0.3</string>
 	<key>webaddress</key>
 	<string>cdpath.xyz</string>
 </dict>
