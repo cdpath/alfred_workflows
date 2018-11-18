@@ -18,6 +18,10 @@
 
 type `dark` to switch between dark and light theme
 
+## Link to Markdown
+
+type `\\u`
+
 ### Acknowledge
 - [flat vim icon](https://iconverticons.com/icons/92d8febce1d7a304/)
 - [Alfred App Community Forum](https://www.alfredforum.com/topic/10547-edit-clipboard-within-macvim/)
