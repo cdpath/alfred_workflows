@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>xyz.cdpath.md</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>2BF13683-835C-4347-AF5B-9BFC1223ECB6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9E69036A-1B66-4A10-9046-99A3EAA4B03A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2F3318C1-8262-43BD-A456-EB2B2A94C650</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>53E30C48-976E-46C2-BA45-94E01709C0A2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>53E30C48-976E-46C2-BA45-94E01709C0A2</key>
+		<array/>
+		<key>8942009E-7800-4303-B4CD-C81203ACC682</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B35F3739-AAF8-4F94-93A6-9B98060EDF42</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9E69036A-1B66-4A10-9046-99A3EAA4B03A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FC1D61AC-1A5A-45BC-A03D-76A2CA805D0B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A9F3E232-7873-445F-AD50-A12415B273FE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8942009E-7800-4303-B4CD-C81203ACC682</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>B71CB49B-E762-47E3-A2B6-C73AAA3E39AF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>B23C47B0-8A23-4EA9-B6D1-A00266C8C10E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>2BF13683-835C-4347-AF5B-9BFC1223ECB6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>2F3318C1-8262-43BD-A456-EB2B2A94C650</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B23C47B0-8A23-4EA9-B6D1-A00266C8C10E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9E69036A-1B66-4A10-9046-99A3EAA4B03A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B35F3739-AAF8-4F94-93A6-9B98060EDF42</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>494649E5-798B-46A8-B318-39FBCBF033A6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B71CB49B-E762-47E3-A2B6-C73AAA3E39AF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9E69036A-1B66-4A10-9046-99A3EAA4B03A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>ED3AEF7C-DD02-43F9-977C-DD012FA66446</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A9F3E232-7873-445F-AD50-A12415B273FE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FC1D61AC-1A5A-45BC-A03D-76A2CA805D0B</key>
+		<array/>
+	</dict>
+	<key>createdby</key>
+	<string>cdpath</string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>url2md</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>v</string>
+				<key>keycode</key>
+				<integer>-1</integer>
+				<key>keymod</key>
+				<integer>1572864</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>494649E5-798B-46A8-B318-39FBCBF033A6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>B35F3739-AAF8-4F94-93A6-9B98060EDF42</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{var:editor}</string>
+				<key>matchcasesensitive</key>
+				<false/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>com.soulmen.ulysses-setapp</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>8942009E-7800-4303-B4CD-C81203ACC682</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{var:editor}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>com.apple.Notes</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>B71CB49B-E762-47E3-A2B6-C73AAA3E39AF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>FC1D61AC-1A5A-45BC-A03D-76A2CA805D0B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>focusedappvariable</key>
+				<true/>
+				<key>focusedappvariablename</key>
+				<string>editor</string>
+				<key>keyword</key>
+				<string>u</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.snippet</string>
+			<key>uid</key>
+			<string>ED3AEF7C-DD02-43F9-977C-DD012FA66446</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string># https://macscripter.net/viewtopic.php?id=26498
+
+echo "{\rtf1\ansi\ansicpg1252\cocoartf949\cocoasubrtf270
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+{\field{\*\fldinst{HYPERLINK \"${current_tab_url}\"}}{\fldrslt 
+\f0\fs24 \cf0 ${current_tab_title}}}}" | pbcopy -Prefer rtf</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>9E69036A-1B66-4A10-9046-99A3EAA4B03A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<true/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>function run(argv) {
+  // https://www.alfredforum.com/topic/9070-how-to-workflowenvironment-variables/
+  ObjC.import('stdlib');
+  const browser = $.getenv('browser');
+  var browser_app = Application(browser)
+  
+  // https://www.alfredforum.com/topic/2013-how-to-get-frontmost-tab%E2%80%99s-url-and-title-of-various-browsers/
+  if (['Google Chrome','Google Chrome Canary','Chromium','Opera','Vivaldi'].indexOf(browser) &gt; -1) {
+    var current_tab_title = browser_app.windows[0].activeTab.name()
+    var current_tab_url = browser_app.windows[0].activeTab.url()
+  } else if (['Safari','Safari Technology Preview','Webkit'].indexOf(browser) &gt; -1) {
+    var current_tab_title = browser_app.documents[0].name()
+    var current_tab_url = browser_app.documents[0].url()
+  } else {
+    throw new Error('You need a supported browser as your frontmost app')
+  }
+  
+  // https://stackoverflow.com/questions/3334341/json-to-string-variable-dump
+  return JSON.stringify({
+    "alfredworkflow": {
+      "arg": `[${current_tab_title}](${current_tab_url})`,
+      "variables": {
+        "current_tab_title": toUTF8(current_tab_title),
+        "current_tab_url": current_tab_url
+      }
+    }
+  })
+}
+
+function toUTF8(s) {
+  return s.split("").map(u).join("")
+}
+
+function u(character) {
+  return '\\u' + character.codePointAt(0)
+}</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A9F3E232-7873-445F-AD50-A12415B273FE</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{var:editor}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>com.evernote.Evernote</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>B23C47B0-8A23-4EA9-B6D1-A00266C8C10E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{var:editor}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>com.literatureandlatte.scapple</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>2BF13683-835C-4347-AF5B-9BFC1223ECB6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>53E30C48-976E-46C2-BA45-94E01709C0A2</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{var:editor}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>com.soulmen.ulysses-setapp</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>2F3318C1-8262-43BD-A456-EB2B2A94C650</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Thanks the following resources:
+
+1. Get frontmost tab’s url and title of various browsers
+2. How to get Bundle ID of Mac application?
+3. [HOW TO] Workflow/environment variables
+
+
+Q&amp;A
+
+Q: How to get bundle id
+A: osascript -e 'id of app "SomeApp"'
+
+Q: Supported browser?
+A: Google Chrome and Safari</string>
+	<key>uidata</key>
+	<dict>
+		<key>2BF13683-835C-4347-AF5B-9BFC1223ECB6</key>
+		<dict>
+			<key>note</key>
+			<string>Scapple</string>
+			<key>xpos</key>
+			<integer>570</integer>
+			<key>ypos</key>
+			<integer>340</integer>
+		</dict>
+		<key>2F3318C1-8262-43BD-A456-EB2B2A94C650</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>else</string>
+			<key>xpos</key>
+			<integer>570</integer>
+			<key>ypos</key>
+			<integer>470</integer>
+		</dict>
+		<key>494649E5-798B-46A8-B318-39FBCBF033A6</key>
+		<dict>
+			<key>note</key>
+			<string>Ulysses shortcut</string>
+			<key>xpos</key>
+			<integer>840</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
+		<key>53E30C48-976E-46C2-BA45-94E01709C0A2</key>
+		<dict>
+			<key>note</key>
+			<string>original markdown</string>
+			<key>xpos</key>
+			<integer>690</integer>
+			<key>ypos</key>
+			<integer>440</integer>
+		</dict>
+		<key>8942009E-7800-4303-B4CD-C81203ACC682</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>Ulysses</string>
+			<key>xpos</key>
+			<integer>570</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+		<key>9E69036A-1B66-4A10-9046-99A3EAA4B03A</key>
+		<dict>
+			<key>note</key>
+			<string>convert to RTF</string>
+			<key>xpos</key>
+			<integer>690</integer>
+			<key>ypos</key>
+			<integer>230</integer>
+		</dict>
+		<key>A9F3E232-7873-445F-AD50-A12415B273FE</key>
+		<dict>
+			<key>note</key>
+			<string>Get [Title](URL)</string>
+			<key>xpos</key>
+			<integer>270</integer>
+			<key>ypos</key>
+			<integer>230</integer>
+		</dict>
+		<key>B23C47B0-8A23-4EA9-B6D1-A00266C8C10E</key>
+		<dict>
+			<key>note</key>
+			<string>Evernote</string>
+			<key>xpos</key>
+			<integer>570</integer>
+			<key>ypos</key>
+			<integer>260</integer>
+		</dict>
+		<key>B35F3739-AAF8-4F94-93A6-9B98060EDF42</key>
+		<dict>
+			<key>xpos</key>
+			<integer>680</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
+		<key>B71CB49B-E762-47E3-A2B6-C73AAA3E39AF</key>
+		<dict>
+			<key>note</key>
+			<string>Notes</string>
+			<key>xpos</key>
+			<integer>570</integer>
+			<key>ypos</key>
+			<integer>180</integer>
+		</dict>
+		<key>ED3AEF7C-DD02-43F9-977C-DD012FA66446</key>
+		<dict>
+			<key>xpos</key>
+			<integer>90</integer>
+			<key>ypos</key>
+			<integer>230</integer>
+		</dict>
+		<key>FC1D61AC-1A5A-45BC-A03D-76A2CA805D0B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>840</integer>
+			<key>ypos</key>
+			<integer>230</integer>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<dict>
+		<key>browser</key>
+		<string>Google Chrome</string>
+	</dict>
+	<key>version</key>
+	<string>0.0.2</string>
+	<key>webaddress</key>
+	<string>cdpath.xyz</string>
+</dict>
+</plist>
