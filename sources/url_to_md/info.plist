@@ -21,6 +21,8 @@
 				<false/>
 			</dict>
 		</array>
+		<key>6454D7E8-56CF-4DC4-A058-359AB7FED372</key>
+		<array/>
 		<key>8942009E-7800-4303-B4CD-C81203ACC682</key>
 		<array>
 			<dict>
@@ -38,7 +40,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>FC1D61AC-1A5A-45BC-A03D-76A2CA805D0B</string>
+				<string>A00FE09C-8869-4DE4-B922-B1D8A69FDCA4</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -119,8 +121,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>FC1D61AC-1A5A-45BC-A03D-76A2CA805D0B</key>
-		<array/>
 	</dict>
 	<key>createdby</key>
 	<string>cdpath</string>
@@ -190,23 +190,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>transient</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>FC1D61AC-1A5A-45BC-A03D-76A2CA805D0B</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>focusedappvariable</key>
 				<true/>
 				<key>focusedappvariablename</key>
@@ -218,6 +201,25 @@
 			<string>alfred.workflow.trigger.snippet</string>
 			<key>uid</key>
 			<string>ED3AEF7C-DD02-43F9-977C-DD012FA66446</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>v</string>
+				<key>keycode</key>
+				<integer>-1</integer>
+				<key>keymod</key>
+				<integer>1048576</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>A00FE09C-8869-4DE4-B922-B1D8A69FDCA4</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -356,7 +358,7 @@ function u(character) {
 				<key>matchmode</key>
 				<integer>2</integer>
 				<key>matchstring</key>
-				<string>^((?!(ulysses)).)*$</string>
+				<string>^((?!(ulysses|Notes|Evernote|scapple)).)*$</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.filter</string>
@@ -432,6 +434,13 @@ A: Google Chrome and Safari</string>
 			<key>ypos</key>
 			<integer>230</integer>
 		</dict>
+		<key>A00FE09C-8869-4DE4-B922-B1D8A69FDCA4</key>
+		<dict>
+			<key>xpos</key>
+			<integer>810</integer>
+			<key>ypos</key>
+			<integer>230</integer>
+		</dict>
 		<key>A9F3E232-7873-445F-AD50-A12415B273FE</key>
 		<dict>
 			<key>note</key>
@@ -466,13 +475,6 @@ scapple</string>
 			<key>ypos</key>
 			<integer>230</integer>
 		</dict>
-		<key>FC1D61AC-1A5A-45BC-A03D-76A2CA805D0B</key>
-		<dict>
-			<key>xpos</key>
-			<integer>810</integer>
-			<key>ypos</key>
-			<integer>230</integer>
-		</dict>
 	</dict>
 	<key>variables</key>
 	<dict>
@@ -480,7 +482,7 @@ scapple</string>
 		<string>Google Chrome</string>
 	</dict>
 	<key>version</key>
-	<string>0.0.3</string>
+	<string>0.1.0</string>
 	<key>webaddress</key>
 	<string>cdpath.xyz</string>
 </dict>
