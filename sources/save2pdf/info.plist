@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>save2pdf</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>3BA2F18C-516B-4E3F-B1D8-2A8B837662D4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AF335417-BE40-482B-A6D3-7D73DEEB48C0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>AF335417-BE40-482B-A6D3-7D73DEEB48C0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DCA4E02C-9CD2-4F67-8C2D-1316846B968B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>cdpath</string>
+	<key>description</key>
+	<string>Render in reader mode then save as PDF</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Save2PDF</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>↩</string>
+				<key>keycode</key>
+				<integer>36</integer>
+				<key>keymod</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>DCA4E02C-9CD2-4F67-8C2D-1316846B968B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>pdf</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Save2PDF</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>3BA2F18C-516B-4E3F-B1D8-2A8B837662D4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "System Events"
+    tell application process "Safari"
+        set frontmost to true
+        repeat until window 1 exists
+        end repeat
+
+        -- Scroll to bottom and wait till page fully loaded
+        -- https://stackoverflow.com/questions/4965730/how-do-i-scroll-to-the-top-of-a-window-using-applescript
+        key code 119
+        delay 1
+
+        -- Render page in Safari Reader
+        keystroke "r" using {command down, shift down}
+        delay 0.5
+
+        -- Export as PDF
+        click menu item "Export as PDF…" of menu 1 of menu bar item "File" of menu bar 1
+        repeat until sheet 1 of window 1 exists
+        end repeat
+    end tell
+end tell</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>AF335417-BE40-482B-A6D3-7D73DEEB48C0</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Usage:
+
+Open url in Safari then type `pdf` in Alfred
+
+
+More:
+
+https://github.com/cdpath/alfred_workflows</string>
+	<key>uidata</key>
+	<dict>
+		<key>3BA2F18C-516B-4E3F-B1D8-2A8B837662D4</key>
+		<dict>
+			<key>xpos</key>
+			<integer>160</integer>
+			<key>ypos</key>
+			<integer>140</integer>
+		</dict>
+		<key>AF335417-BE40-482B-A6D3-7D73DEEB48C0</key>
+		<dict>
+			<key>xpos</key>
+			<integer>330</integer>
+			<key>ypos</key>
+			<integer>140</integer>
+		</dict>
+		<key>DCA4E02C-9CD2-4F67-8C2D-1316846B968B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>490</integer>
+			<key>ypos</key>
+			<integer>140</integer>
+		</dict>
+	</dict>
+	<key>version</key>
+	<string>0.0.1</string>
+	<key>webaddress</key>
+	<string>save2pdf.cdpath.xyz</string>
+</dict>
+</plist>

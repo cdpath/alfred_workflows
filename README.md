@@ -22,6 +22,11 @@ type `dark` to switch between dark and light theme
 
 type `\\u`
 
+## Save Web page as PDF
+
+Render in Safari Reader mode then export as PDF.
+
+
 ### Acknowledge
 - [flat vim icon](https://iconverticons.com/icons/92d8febce1d7a304/)
 - [Alfred App Community Forum](https://www.alfredforum.com/topic/10547-edit-clipboard-within-macvim/)
