@@ -104,6 +104,10 @@
         key code 119
         delay 1
 
+        -- Force stop loading page
+        keystroke "." using {command down}
+        delay 0.1
+
         -- Render page in Safari Reader
         keystroke "r" using {command down, shift down}
         delay 0.5
