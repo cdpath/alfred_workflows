@@ -7,4 +7,6 @@ This workflow adds the following fallback searches to Alfred:
 - Search in DEVONthink
 - Search in Calibre (6.0 or above)
 - Search in Obsidian
+- Search in GoldenDict
 
+![](./demo.png)

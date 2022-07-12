@@ -47,11 +47,50 @@
 				<false/>
 			</dict>
 		</array>
+		<key>61EC3474-0853-4045-A429-719F88F1C6D2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E6ECCF92-6C04-4CFE-925F-978827F8AAEE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>6DDFECC6-3132-4CE2-81CE-14C3523EBEF2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E6ECCF92-6C04-4CFE-925F-978827F8AAEE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>C4349B6B-3A7E-425A-9FEB-9572B6ADF16B</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>CEA1D016-F1E0-439B-A7C1-5CF710315248</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CA565D58-AFDC-4041-89E6-57B71981C2E5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E6ECCF92-6C04-4CFE-925F-978827F8AAEE</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -100,23 +139,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>x-devonthink://search?query={query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>CBD76A3F-B465-46FE-B865-53F7000575EF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>text</key>
 				<string>DT Search</string>
 			</dict>
@@ -130,13 +152,17 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>text</key>
-				<string>Obsidian Search</string>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>x-devonthink://search?query={query}</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.fallback</string>
+			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>1B545DD0-F51E-4871-9B4D-993B42310E1F</string>
+			<string>CBD76A3F-B465-46FE-B865-53F7000575EF</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -180,6 +206,19 @@ console.log(uri);</string>
 			<string>4DC5D541-F260-4AC0-860E-90C35BD4E378</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>text</key>
+				<string>Obsidian Search</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.fallback</string>
+			<key>uid</key>
+			<string>1B545DD0-F51E-4871-9B4D-993B42310E1F</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -265,6 +304,102 @@ console.log(uri);</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>gd</string>
+				<key>subtext</key>
+				<string>Search in Goldendict</string>
+				<key>text</key>
+				<string>Goldendict</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>CA565D58-AFDC-4041-89E6-57B71981C2E5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>text</key>
+				<string>GoldenDict Search</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.fallback</string>
+			<key>uid</key>
+			<string>6DDFECC6-3132-4CE2-81CE-14C3523EBEF2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run
+  set theQuery to "{query}"
+
+
+    set appPath to "/Applications/GoldenDict.app/"
+
+    if application id "org.goldendict" is running then
+        tell application id "org.goldendict"
+            do shell script (appPath &amp; "/Contents/MacOS/GoldenDict " &amp; theQuery)
+        end tell
+    else
+        tell application id "org.goldendict"
+            activate
+        end tell
+        do shell script (appPath &amp; "/Contents/MacOS/GoldenDict " &amp; theQuery)
+    end if
+
+  return theQuery
+end run</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>E6ECCF92-6C04-4CFE-925F-978827F8AAEE</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>GoldenDict</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>61EC3474-0853-4045-A429-719F88F1C6D2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Add several Fallback searches for Alfred.
@@ -313,12 +448,33 @@ Type ?fallback in Alfred to setup.</string>
 			<key>ypos</key>
 			<real>230</real>
 		</dict>
+		<key>61EC3474-0853-4045-A429-719F88F1C6D2</key>
+		<dict>
+			<key>xpos</key>
+			<real>220</real>
+			<key>ypos</key>
+			<real>965</real>
+		</dict>
+		<key>6DDFECC6-3132-4CE2-81CE-14C3523EBEF2</key>
+		<dict>
+			<key>xpos</key>
+			<real>220</real>
+			<key>ypos</key>
+			<real>810</real>
+		</dict>
 		<key>C4349B6B-3A7E-425A-9FEB-9572B6ADF16B</key>
 		<dict>
 			<key>xpos</key>
 			<real>225</real>
 			<key>ypos</key>
 			<real>515</real>
+		</dict>
+		<key>CA565D58-AFDC-4041-89E6-57B71981C2E5</key>
+		<dict>
+			<key>xpos</key>
+			<real>220</real>
+			<key>ypos</key>
+			<real>660</real>
 		</dict>
 		<key>CBD76A3F-B465-46FE-B865-53F7000575EF</key>
 		<dict>
@@ -333,6 +489,13 @@ Type ?fallback in Alfred to setup.</string>
 			<real>470</real>
 			<key>ypos</key>
 			<real>460</real>
+		</dict>
+		<key>E6ECCF92-6C04-4CFE-925F-978827F8AAEE</key>
+		<dict>
+			<key>xpos</key>
+			<real>480</real>
+			<key>ypos</key>
+			<real>810</real>
 		</dict>
 		<key>FAD49E60-14C3-4D8A-B36E-9DAE2389C449</key>
 		<dict>
