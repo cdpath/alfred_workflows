@@ -61,7 +61,7 @@
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>keyword</key>
-				<string>v2ex</string>
+				<string>{var:keyword}</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -132,9 +132,9 @@ sys.stdout.write(res)
 				<key>fixedorder</key>
 				<true/>
 				<key>items</key>
-				<string>[{"title":"最新"},{"title":"Python","arg":"python"},{"title":"技术","arg":"tech","subtitle":""}]</string>
+				<string>[{"title":"最新"},{"title":"Python","arg":"python"},{"title":"技术","arg":"tech","subtitle":""},{"title":"酷工作","arg":"jobs","subtitle":""}]</string>
 				<key>keyword</key>
-				<string>v2ex</string>
+				<string>{var:keyword}</string>
 				<key>matchmode</key>
 				<integer>0</integer>
 				<key>runningsubtext</key>
@@ -155,7 +155,17 @@ sys.stdout.write(res)
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string># V2EX Reader
+
+通过 Alfred 快速获取 V2EX 帖子
+
+
+![V2EX workflow](demo.png)
+
+
+## keyword
+
+配置触发 Workflow 的关键字</string>
 	<key>uidata</key>
 	<dict>
 		<key>0A319B1D-34CE-414E-A6E7-11BBE032A7BE</key>
@@ -181,11 +191,33 @@ sys.stdout.write(res)
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
-	<array/>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>v2ex</string>
+				<key>placeholder</key>
+				<string>v2ex</string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Workflow Keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>keyword</string>
+		</dict>
+	</array>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.0.1</string>
+	<string>0.0.2</string>
 	<key>webaddress</key>
 	<string>jingyi.blog</string>
 </dict>

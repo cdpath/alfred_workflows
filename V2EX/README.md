@@ -2,12 +2,12 @@
 
 ## Preview
 
-![](./v2ex.png)
+![](./src/demo.png)
 
 
 ## Configuration
 
 You can customize favorite nodes in **List Filter**:
 
-![](./v2ex_configuration.png)
+![](./src/configuration.png)
 
