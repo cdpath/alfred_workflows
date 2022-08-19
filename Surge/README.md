@@ -14,7 +14,7 @@ add the following lines in Surge Profiles:
 http-api = replaceme@0.0.0.0:6171
 ```
 
-## Functionally
+## Functionality
 
 - List Profiles
 - Switch Profiles
