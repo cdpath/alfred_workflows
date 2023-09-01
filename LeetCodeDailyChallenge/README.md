@@ -1,5 +1,6 @@
 # LeetCode Daily Challenge Alfred Workflow
 
+![](./src/Screenshot.png)
 
 ## Features:
 
